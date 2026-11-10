@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia | Corte e Estilo</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #1a1a1a;
+      --text: #f5f5f5;
+      --accent: #d4af37;
+      --whatsapp: #25D366;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #111 0%, #000 100%);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    .logo { font-weight: 800; font-size: 1.4rem; color: var(--accent); }
+    nav a { color: var(--text); text-decoration: none; margin-left: 1.2rem; font-size: 0.95rem; }
+    .hero {
+      min-height: 85vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero-content h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    .hero-content p { font-size: 1.2rem; margin-bottom: 1.8rem; max-width: 500px; margin-inline: auto; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 0.9rem 1.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .btn:hover { transform: translateY(-2px); transition: 0.2s; }
+    section { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    h2 { text-align: center; font-size: 2.2rem; margin-bottom: 2rem; color: var(--accent); }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.8rem;
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+    .card h3 { margin-bottom: 0.6rem; color: var(--accent); }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--whatsapp);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      z-index: 1000;
+    }
+    footer { text-align: center; padding: 2rem; background: #111; font-size: 0.9rem; color: #aaa; }
+    @media (max-width: 600px) {
+      .hero-content h1 { font-size: 2rem; }
+      nav a { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BARBEARIA</div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Corte perfeito, estilo único</h1>
+      <p>Barbearia moderna com profissionais experientes. Agende seu horário e saia com o visual renovado.</p>
+      <a href="https://wa.me/55DDDNUMERO?text=Olá! Quero agendar um horário" class="btn">Agendar no WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Corte Masculino</h3>
+        <p>Corte clássico ou moderno, feito com precisão.</p>
+      </div>
+      <div class="card">
+        <h3>Barba</h3>
+        <p>Aparar, desenhar e finalizar com produtos de qualidade.</p>
+      </div>
+      <div class="card">
+        <h3>Combo Completo</h3>
+        <p>Corte + barba + sobrancelha com preço especial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a Barbearia</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto;">Somos uma barbearia local focada em atendimento de qualidade e ambiente descontraído. Aqui você encontra profissionais que entendem do seu estilo.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p style="text-align:center;">Endereço: Rua Exemplo, 123 - Seu Bairro<br>
+    Horário: Seg a Sáb - 9h às 19h<br>
+    WhatsApp: (DD) 9XXXX-XXXX</p>
+  </section>
+
+  <a href="https://wa.me/55DDDNUMERO?text=Olá! Quero agendar" class="whatsapp-float" aria-label="WhatsApp">💬</a>
+
+  <footer>
+    <p>© 2026 Barbearia - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

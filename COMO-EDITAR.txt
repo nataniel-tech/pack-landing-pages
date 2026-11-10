@@ -1,0 +1,12 @@
+COMO EDITAR OS SITES (em 5 minutos)
+
+1. Abra o arquivo .html no Acode, TrebEdit ou qualquer editor de texto.
+2. Procure e troque:
+   - 55DDDNUMERO → coloque o número do WhatsApp com DDD (ex: 5565999999999)
+   - Os textos de título, descrição e serviços
+   - Nome da loja / negócio
+3. Salve o arquivo.
+4. Abra no navegador do celular para testar.
+5. Para publicar: use Netlify Drop, GitHub Pages ou hospedagem simples.
+
+Todos os sites já têm botão flutuante de WhatsApp e são 100% responsivos.
